@@ -1,0 +1,440 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Times New Roman;
+    background-color: black;
+}
+
+/*custom font*/
+@font-face {
+    font-family: 'Simple Brush Script';
+    src: url('SimpleBrushScript-lyqZ.ttf');
+}
+
+/*styles of navbar*/
+.menu{
+    background-color: #004332;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    margin: 0px 0px;
+    position: fixed;
+    z-index: 1;
+    border-bottom: 1px solid #a89554;
+    box-shadow: 1px 1px 7px 0.4px #a89554;
+    display: flex;
+    justify-content: center;
+}
+.menu h1{
+    position: absolute;
+    left:12px;
+    color: #b9a45f;
+    font-family: Simple Brush Script;
+}
+.menu a{
+    text-decoration: none;
+    color:#b9a45f;
+    margin: 0px 30px;
+    position: relative;
+    top:22px;
+    padding:5px;
+    font-weight: bold;
+}
+.menu a:hover{
+    border-top: 1px solid #b9a45f;
+    border-bottom: 1px solid #b9a45f;
+}
+/*end styles of navbar*/
+
+/*styles part of home*/
+.image-home{
+    width: 100%;
+    height: 470px;
+    text-align: center;
+    background: url('hom.PNG');
+    background-size: cover;
+}
+.image-home:hover{
+    box-shadow: inset 0px 0px 3px 300px #1d1d1dcc;
+    transition: 1s;
+}
+.image-home h1{
+    position: relative;
+    top: 200px;
+    visibility: hidden;
+    color: #bda75f;
+    font-size: 40px;
+}
+.image-home:hover h1{
+    visibility: visible;
+    transition: 1s;
+}
+main{
+    text-align: center;
+    padding: 15px;
+}
+main iframe{
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #bda75f;
+}
+main iframe:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+/*end styles of home*/
+
+/*styles part of drama series*/
+.container{
+    width: 950px;
+    height: auto;
+    border: 1px solid #bda75f;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border-bottom: none;
+    text-align: center;
+    padding: 35px 15px;
+}
+.container h1{
+    color: #bda75f;
+}
+.container .row2{
+    display: flex;
+    justify-content: center;
+}
+.team-members{
+    width: 190px;
+    height: 250px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #004332;
+    border: 1px solid #004332;
+    border-radius: 10px;
+}
+.team-members:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.team-members img{
+    width: 100%;
+    height: 250px;
+}
+.team-members p{
+    visibility: hidden;
+    position:relative;
+    top:-277px;
+    padding: 30px 16px;
+    font-size: 14px;
+    background-color: #004332;
+    color: #a89554;
+    height: 200px;
+}
+.team-members:hover p{
+    visibility: visible;
+    border: 1px solid #bda75f;
+}
+.container h3{
+    color: #bda75f;
+    font-family: Simple Brush Script;
+}
+.container h6 a{
+    text-decoration: none;
+    color:#bda75f;
+    border-top: 1px solid #bda75f;
+    border-bottom: 1px solid #bda75f;
+    padding: 7px 25px;
+}
+.container h6 a:hover{
+    background-color: #bda75f;
+    color: #004332;
+    transition: 1s;
+}
+/*end styles part of drama series*/
+
+/*styles part of about*/
+.about{
+    width: 950px;
+    height: auto;
+    border: 1px solid #bda75f;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-bottom: none;
+    text-align: center;
+    display: flex;
+}
+.about .image{
+    width: 400px;
+    height: auto;
+}
+.about .image img{
+    width: 100%;
+    height: auto;
+}
+.about .biograph{
+    width: 550px;
+    padding-top: 10px;
+}
+.about .biograph h1{
+    color: #bda75f;
+    text-align: center;
+}
+.about .biograph p{
+    color: #bda75f;
+    font-size: 15px;
+}
+.about .biograph p:hover{
+   transform: scale(1.1);
+}
+/*end styles part of about*/
+
+/*styles part of contact*/
+.contact{
+    width: 950px;
+    height: auto;
+    border: 1px solid #bda75f;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-bottom: none;
+    display: flex;
+}
+.contact .audio{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    border-right: 1px solid #b3936a;
+}
+.contact audio{
+    margin-top: 20px;
+    width: 220px;
+    height: 40px;
+    border: 3px solid #004332;
+    border-radius: 35px;
+}
+.contact img{
+    width: 300px;
+    height: 300px;
+    border: 2px solid #b3936a;
+    border-radius: 50%;
+    animation: img 15s infinite;
+}
+@keyframes img{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.contact .form{
+    width: 500px;
+    padding: 30px 15px;
+}
+.contact h1{
+    text-align: center;
+    font-size: 40px;
+    color: #b9a45f;
+    letter-spacing: 8px;
+    animation: text 2s forwards;
+}
+.contact h2{
+    text-align: center;
+    color: #b9a45f;
+    animation: text 2s forwards;
+}
+@keyframes text{
+	0% {opacity:0; transform:translateY(20px);} 
+	100% {opacity:1; transform:translateY(-20px);}
+}
+.contact label{
+    color: #dddada;
+}
+.contact input{
+    width: 100%;
+    height: 28px;
+    margin-bottom: 15px;
+    border: 1px solid  #dddada;
+    background-color: #dddada;
+}
+.contact textarea{
+    background-color: #dddada;
+    border: 1px solid #004332;
+    width: 100%;
+}
+.contact button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 8px;
+    font-weight: bold;
+    background-color:#004332;
+    border: 1px solid #004332;
+    color:#dddada;
+}
+/*end styles part of contact*/
+
+/*styles part of footer*/
+footer{
+    width: 100%;
+    height: 180px;
+    background-color: #004332;
+    color:#a89554;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #9e825e;
+    margin-bottom: 0px;
+}
+footer div{
+    position: relative;
+    top:15px;
+    width: 28%;
+}
+footer div .p1:hover{
+    font-size: 17px;
+    color:#ccc7c7;
+}
+footer div a{
+    display: block;
+    margin-top: 8px;
+    color:#a89554;
+}
+footer div a:hover{
+    font-size: 18px;
+    color:#ccc7c7;
+}
+/*end styles part of footer*/
+
+/*styles part of action from submit*/
+.action{
+	background-color:#004332;
+    border: 2px solid #a89554;
+	opacity: 0.8;
+	width: 60%;
+	height: 140px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:40px;
+	color:#a89554;
+	font-family: arial;
+	padding:30px;
+}
+.description, .title{
+	text-align: center;
+}
+
+
+
+
+@media (max-width: 1023px) {
+    /* All the CSS here shows up for screen sizes 1023px and smaller. */
+    .container {
+        width: 800px;
+    }
+    .team-members{
+        width: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 500px;
+    }
+    .team-members{
+        width: 130px;
+    }
+}
+
+@media (max-width: 400px) {
+    .menu{
+        height: 50px;
+    }
+    .menu h1{
+        position: absolute;
+        left:5px;
+        top:14px;
+        color: #b9a45f;
+        font-family: Simple Brush Script;
+        font-size: 14px;
+    }
+    .menu a{
+        text-decoration: none;
+        color:#b9a45f;
+        margin: 0px 7px;
+        position: relative;
+        top:12px;
+        left:30px;
+        padding:5px;
+        font-weight: bold;
+        font-size: 10px;
+    }
+    .container {
+        width: 320px;
+        margin-top: 0px;
+    }
+    .container h1{
+        color: #bda75f;
+        font-size: 20px;
+    }
+    .team-members{
+        width: 65px;
+        height: 85px;
+        margin: 5px;
+        padding: 3px;
+        background-color: #004332;
+        border: 1px solid #004332;
+        border-radius: 3px;
+    }
+    .team-members img{
+        width: 100%;
+        height: 85px;
+    }
+    .team-members p{
+        visibility: hidden;
+        position:relative;
+        top:-98px;
+        padding: 5px 5px;
+        font-size: 6px;
+        background-color: #004332;
+        color: #a89554;
+        height: 78px;
+    }
+    .container h3{
+        font-size: 8px;
+        color: #bda75f;
+        font-family: Simple Brush Script;
+    }
+    .container h6 a{
+        text-decoration: none;
+        color:#bda75f;
+        border-top: 1px solid #bda75f;
+        border-bottom: 1px solid #bda75f;
+        padding: 2px 3px;
+        font-size: 6px;
+    }
+
+    footer{
+        width: 100%;
+        height: 130px;
+        background-color: #004332;
+        color:#a89554;
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid #9e825e;
+        margin-bottom: 0px;
+        font-size: 10px;
+    }
+    footer div{
+        position: relative;
+        top:7px;
+        width: 28%;
+        margin: 8px;
+    }
+    footer div .p1:hover{
+        font-size: 17px;
+        color:#ccc7c7;
+    }
+    footer div a{
+        display: block;
+        margin-top: 8px;
+        color:#a89554;
+    }
+}
